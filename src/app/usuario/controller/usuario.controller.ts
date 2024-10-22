@@ -18,7 +18,7 @@ export class UsuarioController {
   }
 
 
-  @Get()
+  @Get('todos')
   @ApiResponse({ status: 200, description: 'Retorna todos os usuários.' })
   @ApiResponse({ status: 500, description: 'Erro ao buscar usuários.' }) 
   async findAll(): Promise<Usuario[]> {
